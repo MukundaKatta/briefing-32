@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.gradio/
+gradio_cached_examples/
+flagged/
+state/
+*.log
