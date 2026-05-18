@@ -72,12 +72,17 @@ HF_TOKEN=hf_xxx python app.py
 
 Then open the Gradio URL it prints. Click **Run briefing**.
 
-## Run as an HF Space
+## Live Space
 
-The repo is shaped like a standard Hugging Face Space. The `README.md`
-front-matter wires `app.py` as the entry point and pins the Gradio SDK.
-After deploy, the Space's "Settings → Variables and secrets" gets one
-secret: `HF_TOKEN` (a read-permission token is plenty).
+**[huggingface.co/spaces/build-small-hackathon/briefing-32](https://huggingface.co/spaces/build-small-hackathon/briefing-32)**
+
+The deployed Space uses a flat-layout mirror of this repo (modules at root
+instead of inside `briefing/`) so HF Spaces' upload UI loads it without
+package-import wrangling. The Space's "Settings → Variables and secrets"
+takes one secret: `HF_TOKEN` (read permission is enough for HF Inference
+Providers calls).
+
+Demo video (YouTube unlisted): **[youtu.be/7VQf_6mSDCw](https://youtu.be/7VQf_6mSDCw)**
 
 ## Model
 
